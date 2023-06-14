@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  react:
+    container_name: nextjs
+    build:
+      context: build/nextjs
+      dockerfile: Dockerfile
+    volumes:
+      - ./web:/usr/src/app
+    ports:
+      - ${WEB_EXPOSE_PORT}:3000
+    environment:
+      - CHOKIDAR_USEPOLLING=false
+      - APP_ENV=${APP_ENV}
