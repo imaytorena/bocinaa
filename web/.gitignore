@@ -33,3 +33,15 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+/.idea
+Homestead.json
+Homestead.yaml
+*.env
+.phpunit.result.cache
+.DS_Store
+/api/vendor
+/api/storage/framework/laravel-excel
+**/node_modules/
+/.vscode
